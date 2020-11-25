@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "EmployeeProto";
+option objc_class_prefix = "HLW";
+
+package proto;
+// The request message containing the user's name.
+message Employee {
+  string name = 1;
+  string empId = 2;
+  string address = 3;
+  string email = 4;
+  int64 phoneNo = 5;
+}
